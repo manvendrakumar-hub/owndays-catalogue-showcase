@@ -1,0 +1,42 @@
+{
+  "id": "tryon",
+  "title": "Product try-on video",
+  "items": [
+    {
+      "id": "catalogue-video",
+      "label": "Catalogue try-on video",
+      "ratio": "4x5",
+      "type": "video",
+      "cap": "A model wears the product on a plain studio wall",
+      "video": "videos/tryon/catalogue-video.mp4",
+      "poster": "videos/tryon/catalogue-video.jpg",
+      "dur": "11.4 s",
+      "bytes": 1445855,
+      "audio": false
+    },
+    {
+      "id": "male-output",
+      "label": "Male output",
+      "ratio": "3x4",
+      "type": "video",
+      "stack": true,
+      "video": "videos/tryon/male-output.mp4",
+      "poster": "videos/tryon/male-output.jpg",
+      "dur": "8.0 s",
+      "bytes": 962719,
+      "audio": false
+    },
+    {
+      "id": "female-output",
+      "label": "Female output",
+      "ratio": "4x5",
+      "type": "video",
+      "stack": true,
+      "video": "videos/tryon/female-output.mp4",
+      "poster": "videos/tryon/female-output.jpg",
+      "dur": "8.0 s",
+      "bytes": 1093629,
+      "audio": false
+    }
+  ]
+}

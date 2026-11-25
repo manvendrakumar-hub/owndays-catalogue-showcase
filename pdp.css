@@ -1,0 +1,203 @@
+/* Product page tab: for each product two phones, today and proposed. The page around the phones uses the showcase tokens (theme-owndays.css).
+   The phone screen copies the real owndays.com mobile product page, so its own colours (navy, teal, red, gold) live on .phone only.
+   The phone is drawn at the real width of a phone page (393 px) and scaled by pdp.js (--s, set on each .pdp-stage) so that a whole phone fits one screen. */
+#panel-pdp > header h1 { font-size: clamp(30px, 4.4vw, 46px); margin-bottom: 12px; }
+#panel-pdp > header .lede { font-size: 16px; max-width: 80ch; }
+.pdp-jump { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 16px 0 6px; }
+.pdp-jump span { font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.pdp-jump button { border: 1px solid #cfcfcf; background: #fff; color: #000; height: 34px; padding: 0 14px; border-radius: 999px; font: 500 14px var(--display); cursor: pointer; }
+.pdp-jump button:hover { border-color: #000; }
+.pdp-jump button:focus-visible { outline: 2px solid #000; outline-offset: 2px; }
+.pdp-prod { padding: 18px 0 14px; border-top: 1px solid var(--line); margin-top: 14px; }
+.pdp-prod-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: 0 0 14px; }
+.pdp-prod-h .pid { background: #000; color: #fff; font: 600 14px var(--display); letter-spacing: 0.08em; padding: 4px 10px; align-self: center; }
+.pdp-prod-h h2 { font-size: 22px; line-height: 1.2; margin: 0; letter-spacing: -0.015em; }
+.pdp-prod-h .pm { font-size: 13px; color: var(--muted); }
+.pdp-stage { --s: 0.8; display: grid; grid-template-columns: repeat(2, max-content) minmax(300px, 1fr); gap: 28px; align-items: start; }
+.pdp-col { width: calc(413px * var(--s)); min-width: 0; }
+.pdp-col-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; margin: 0 0 6px; }
+.pdp-col-h b { font-weight: 600; font-size: 18px; letter-spacing: -0.01em; }
+.pdp-col-h span { font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+/* the phone: 393 x 852 screen in a 10 px bezel, scaled by --s */
+.phone-box { width: calc(413px * var(--s, 0.8)); height: calc(872px * var(--s, 0.8)); }
+.phone {
+  --navy: #000042; --lav: #8f8fad; --band: #f3f3f8; --teal: #0a8aaf; --tealbg: #eef8fb; --tealline: #d6edf4; --dark: #232326; --hair: #e7e7ef; --blue: #1b82b4;
+  width: 413px; height: 872px; transform: scale(var(--s, 0.8)); transform-origin: 0 0; box-sizing: border-box;
+  border: 10px solid #0b0b0b; border-radius: 58px; background: #0b0b0b; position: relative; color: #111; font-family: var(--display);
+}
+.phone .screen { position: relative; width: 393px; height: 852px; background: #fff; border-radius: 48px; overflow: hidden; }
+.phone .island { position: absolute; z-index: 9; top: 11px; left: 50%; width: 112px; height: 32px; background: #0b0b0b; border-radius: 18px; transform: translateX(-50%); }
+.phone .status { position: absolute; z-index: 8; top: 0; left: 0; right: 0; height: 48px; display: flex; justify-content: space-between; align-items: center; padding: 6px 34px 0 40px; font: 600 16px var(--display); background: #fff; }
+.phone .st-r { display: flex; align-items: center; gap: 6px; }
+.phone .st-r svg { height: 12px; width: auto; display: block; fill: #000; }
+.phone .urlbar { position: absolute; z-index: 8; top: 48px; left: 0; right: 0; height: 46px; padding: 3px 12px 6px; background: #fff; border-bottom: 1px solid var(--hair); }
+.phone .url { height: 36px; border-radius: 18px; background: #eceef1; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; font-size: 16px; }
+.phone .url .spark { width: 18px; height: 18px; fill: #6b7280; }
+.phone .url .ic { width: 18px; height: 18px; stroke: #6b7280; }
+
+.phone .page { position: absolute; z-index: 1; inset: 94px 0 0 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none; padding-bottom: 124px; background: #fff; }
+.phone .page::-webkit-scrollbar { display: none; }
+
+/* icons */
+.phone .ic { width: 24px; height: 24px; flex: none; fill: none; stroke: var(--navy); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.phone .bolt { width: 16px; height: 16px; flex: none; fill: #ff4b3a; vertical-align: -2px; }
+.phone .badge { width: 22px; height: 22px; flex: none; fill: #8a5a14; margin-right: 8px; }
+.phone .badge .w { stroke: #fff; stroke-width: 1.8; fill: none; stroke-linecap: round; } .phone .badge .wf { fill: #fff; }
+.phone .chev { width: 8px; height: 8px; fill: var(--blue); margin-left: 4px; }
+
+/* header, sticky inside the scrolling page; the title shows after the photos have scrolled away */
+.phone .p-head { position: sticky; top: 0; z-index: 5; height: 52px; background: #fff; display: flex; align-items: center; padding: 0 16px; gap: 12px; }
+.phone .hb { display: flex; }
+.phone .ht { flex: 1; min-width: 0; font-weight: 700; font-size: 17px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #14143c; opacity: 0; transition: opacity .15s ease; }
+.phone .p-head.scrolled .ht { opacity: 1; }
+.phone .hi { display: flex; gap: 18px; margin-left: auto; }
+.phone .p-head:not(.scrolled) .hi { margin-left: auto; }
+.phone .p-head.scrolled { border-bottom: 1px solid var(--hair); }
+
+/* carousel */
+.car { position: relative; background: #fff; }
+.car-stage { position: relative; }
+.car-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; aspect-ratio: 393 / 318; }
+.car-track::-webkit-scrollbar { display: none; }
+.car-track:focus-visible { outline: 2px solid #000; outline-offset: -2px; }
+.car-slide { flex: 0 0 100%; scroll-snap-align: center; position: relative; background: #fff; }
+.car-slide img, .car-slide video { width: 100%; height: 100%; object-fit: contain; display: block; background: #fff; }
+.car-chip { position: absolute; top: 8px; right: 12px; background: #000; color: #fff; font: 500 11px var(--display); letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 8px; }
+.car-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.92); border: 1px solid #cfcfcf; display: grid; place-items: center; cursor: pointer; padding: 0; }
+.car-btn svg { width: 14px; height: 14px; stroke: #000; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.car-btn.prev { left: 8px; } .car-btn.next { right: 8px; }
+.car-btn:disabled { opacity: 0.3; cursor: default; }
+.car-btn:focus-visible, .p-kind:focus-visible, .seq button:focus-visible, .car-play:focus-visible { outline: 2px solid #000; outline-offset: 2px; }
+.car-play { position: absolute; bottom: 8px; left: 12px; width: 32px; height: 32px; border-radius: 50%; background: #000; border: 0; display: grid; place-items: center; cursor: pointer; padding: 0; }
+.car-play svg { width: 12px; height: 12px; fill: #fff; }
+.car-note { position: absolute; left: 12px; right: 56px; bottom: 46px; font-size: 11px; line-height: 1.35; background: #fff; border: 1px solid var(--hair, #e7e7ef); padding: 4px 8px; }
+.car-dots { display: flex; justify-content: center; gap: 8px; padding: 6px 0 12px; }
+.car-dots i { width: 6px; height: 6px; border-radius: 50%; background: #d4d4e6; flex: none; }
+.car-dots i[data-on] { background: #000042; }
+
+/* the row of block names under the proposed carousel (3D, Front, Side, ...) */
+.p-kinds { display: flex; gap: 8px; overflow-x: auto; padding: 2px 16px 14px; scrollbar-width: none; }
+.p-kinds::-webkit-scrollbar { display: none; }
+.p-kind { flex: none; border: 1px solid #dcdceb; background: #fff; color: #14143c; height: 34px; padding: 0 15px; border-radius: 999px; font: 500 15px var(--display); cursor: pointer; }
+.p-kind[aria-current="true"] { background: var(--dark, #232326); color: #fff; border-color: var(--dark, #232326); }
+
+/* the page below the media */
+.phone .rule { height: 1px; background: var(--hair); }
+.phone .band { height: 10px; background: var(--band); }
+.phone .pg h4 { margin: 0; font-weight: 700; font-size: 20px; line-height: 1.2; letter-spacing: -0.01em; color: #000; }
+.phone .pg h4.big { font-size: 24px; }
+.phone .pg-title { padding: 16px 16px 18px; }
+.phone .ttl { display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; }
+.phone .ttl h3 { margin: 0; font-weight: 700; font-size: 21px; line-height: 1.26; letter-spacing: -0.012em; color: #111; }
+.phone .ttl .fav { margin-top: 2px; stroke: #111; }
+.phone .sub { margin: 2px 0 0; font-size: 16px; color: #1a1a1a; }
+.phone .price { margin: 12px 0 0; font-size: 22px; font-weight: 500; letter-spacing: -0.01em; }
+.phone .incl { margin: 2px 0 0; font-size: 16px; color: var(--lav); }
+.phone .dchip { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; height: 36px; padding: 0 16px 0 10px; border-radius: 18px; background: linear-gradient(90deg, #d9f1f6, #f1fafc); color: var(--teal); font-size: 16px; font-weight: 500; }
+.phone .qrow { display: flex; gap: 10px; margin-top: 14px; }
+.phone .qchip { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 18px; border: 1px solid var(--hair); border-radius: 20px; font-size: 16px; color: #14143c; }
+.phone .qchip .ic { width: 22px; height: 22px; }
+
+.phone .pg-offers { padding: 22px 16px 24px; }
+.phone .offer { margin-top: 16px; border: 1px solid #b47e00; border-radius: 14px; overflow: hidden; background: #fff; }
+.phone .offer-h { background: #b3261e; color: #fff; padding: 11px 16px; font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }
+.phone .offer-b { padding: 14px 16px 16px; }
+.phone .offer-b b { display: block; font-size: 18px; font-weight: 500; color: #000; }
+.phone .offer-b span { display: flex; align-items: center; margin-top: 10px; font-size: 17px; color: #222; }
+
+.phone .pg-colours { display: flex; align-items: flex-start; gap: 22px; padding: 22px 16px 38px; background: #f7f7fd; }
+.phone .pg-colours .lab { width: 76px; flex: none; padding-top: 12px; font-size: 16px; line-height: 1.2; color: var(--lav); }
+.phone .sws { display: flex; gap: 12px; }
+.phone .sw { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; border: 2px solid transparent; }
+.phone .sw.on { border: 3px solid #000042; }
+.phone .sw i { width: 42px; height: 42px; border-radius: 50%; display: block; background: linear-gradient(#b4b5b9 50%, var(--c) 50%); box-shadow: inset 0 0 0 1px rgba(0,0,0,.06); }
+
+.phone .pg-delivery { padding: 26px 16px 20px; }
+.phone .loc { display: flex; align-items: center; gap: 14px; margin-top: 16px; }
+.phone .pinbox { width: 46px; height: 46px; border-radius: 12px; background: var(--band); display: grid; place-items: center; }
+.phone .pinbox .ic { stroke: #3d4a6b; }
+.phone .loc b { display: block; font-size: 20px; font-weight: 700; color: #555; }
+.phone .loc span { color: #9a9aad; font-size: 17px; }
+.phone .dcard { margin-top: 16px; border: 1px solid var(--tealline); border-radius: 16px; background: var(--tealbg); overflow: hidden; }
+.phone .dtop { display: flex; justify-content: space-between; align-items: flex-start; padding: 16px 16px 20px; }
+.phone .dtop b { display: block; font-size: 20px; font-weight: 600; color: var(--teal); }
+.phone .dtop span { display: block; margin-top: 8px; font-size: 16px; color: #444; }
+.phone .dtop > svg { width: 76px; height: auto; flex: none; }
+.phone .dget { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-top: 1px solid var(--tealline); background: #f1fafc; }
+.phone .dget b { font-size: 18px; font-weight: 600; color: #1d1d3d; }
+.phone .dnote { margin: 14px 0 0; padding: 0 12px; font-size: 15px; color: #333; }
+
+.phone .pg-details { padding: 22px 16px 26px; }
+.phone .pg-details dl { margin: 22px 0 0; }
+.phone .pg-details dl div { display: grid; grid-template-columns: 42% 1fr; gap: 12px; padding: 11px 0; font-size: 17px; line-height: 1.3; }
+.phone .pg-details dt { color: #8d8da6; }
+.phone .pg-details dd { margin: 0; color: #2a2a2a; }
+.phone .more { display: inline-flex; align-items: center; height: 46px; margin-top: 14px; padding: 0 22px; border: 1.5px solid #1a1a3a; border-radius: 14px; font-size: 17px; color: #1a1a3a; }
+
+.phone .pg-stores { padding: 18px 16px 12px; }
+.phone .hrow { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.phone .btn-dark { display: inline-flex; align-items: center; height: 46px; padding: 0 18px; border-radius: 12px; background: var(--dark); color: #fff; font-size: 17px; font-weight: 500; flex: none; }
+.phone .find { display: flex; align-items: center; gap: 14px; height: 56px; margin-top: 18px; padding: 0 20px; border: 1px solid #e4e4f1; border-radius: 16px; background: #f7f7fd; font-size: 19px; color: #555; }
+.phone .loca { display: flex; align-items: center; gap: 10px; margin: 14px 0 0; font-size: 19px; color: #14143c; }
+.phone .loca u { text-underline-offset: 5px; }
+.phone .benl { margin: 22px 0 0; font-size: 17px; letter-spacing: 0.01em; color: #222; }
+.phone .bens { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 12px; }
+.phone .benc { border: 1px solid #dff0f6; border-radius: 14px; overflow: hidden; background: #fff; }
+.phone .benc span { display: grid; place-items: start; height: 42px; padding: 9px 12px; background: #e2f3f8; }
+.phone .benc .ben { width: 24px; height: 24px; stroke: #1c6aa0; stroke-width: 1.5; }
+.phone .benc b { display: block; padding: 12px 12px 12px; font-size: 15px; font-weight: 400; line-height: 1.3; color: #1d1d1d; }
+
+.phone .pg-promises { padding: 8px 0 18px; border-top: 1px solid var(--hair); margin-top: 14px; }
+.phone .hscroll { display: flex; gap: 12px; overflow-x: auto; scrollbar-width: none; padding: 8px 16px; }
+.phone .hscroll::-webkit-scrollbar { display: none; }
+.phone .prom { flex: none; width: 144px; height: 192px; padding: 12px 14px 12px; border-radius: 18px; background: #f6f6f8; display: flex; flex-direction: column; justify-content: flex-end; box-sizing: border-box; position: relative; }
+.phone .prom > svg:first-child { position: absolute; top: 14px; left: 20px; width: 92px; height: auto; }
+.phone .prom b { font-size: 15px; font-weight: 700; line-height: 1.25; color: #111; }
+.phone .learn { display: inline-flex; align-items: center; margin-top: 8px; font-size: 15px; font-weight: 600; color: var(--blue); }
+
+.phone .pg-similar { padding: 22px 0 28px; }
+.phone .pg-similar .hrow { padding: 0 16px; }
+.phone .viewall { display: inline-flex; align-items: center; gap: 4px; font-size: 16px; font-weight: 700; color: #14143c; }
+.phone .viewall u { text-decoration-style: dashed; text-underline-offset: 8px; }
+.phone .viewall .ic { width: 16px; height: 16px; stroke-width: 2.4; }
+.phone .sim { flex: none; width: 150px; padding: 8px 8px 10px; border-radius: 16px; background: #f7f7f9; box-sizing: border-box; display: flex; flex-direction: column; }
+.phone .sim-i { position: relative; height: 96px; margin: 0 -8px; }
+.phone .sim-i img { width: 100%; height: 100%; object-fit: contain; display: block; mix-blend-mode: multiply; }
+.phone .sim-i .fav { position: absolute; top: 4px; right: 12px; width: 20px; height: 20px; stroke: #14143c; }
+.phone .sim-n { margin-top: 10px; font-size: 14px; font-weight: 400; line-height: 1.3; color: #14143c; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.phone .sim-l { margin-top: 4px; font-size: 13px; color: #8d8da6; }
+.phone .sim-p { margin-top: 12px; font-size: 17px; font-weight: 700; color: #000; }
+.phone .sim-v { margin-top: 10px; display: grid; place-items: center; height: 36px; border-radius: 8px; background: #fff; border: 1px solid var(--hair); font-size: 16px; font-weight: 600; color: #111; }
+
+/* fixed over the page: chat button and the buy bar */
+.phone .help { position: absolute; z-index: 6; left: 8px; bottom: 108px; display: flex; align-items: center; gap: 10px; height: 44px; padding: 0 16px 0 12px; border-radius: 12px; background: #2b2b2f; color: #fff; font-size: 17px; font-weight: 500; box-shadow: 0 2px 10px rgba(0,0,0,.28); }
+.phone .help .ic { stroke: #fff; }
+.phone .bar { position: absolute; z-index: 6; left: 0; right: 0; bottom: 0; height: 100px; padding: 14px 16px 26px; display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #fff; border-top: 1px solid var(--hair); }
+.phone .bar-l { min-width: 0; line-height: 1.25; }
+.phone .bar-l b { font-size: 21px; font-weight: 700; letter-spacing: -0.01em; }
+.phone .bar-l em { font-style: normal; font-size: 14px; font-weight: 600; }
+.phone .bar-l span { display: block; margin-top: 6px; font-size: 13px; font-weight: 600; }
+.phone .bar-cta { flex: none; display: grid; place-items: center; width: 160px; height: 54px; border-radius: 16px; background: var(--dark); color: #fff; font-size: 19px; font-weight: 700; }
+.phone .home { position: absolute; z-index: 9; bottom: 7px; left: 50%; width: 134px; height: 5px; background: #000; border-radius: 3px; transform: translateX(-50%); }
+
+/* the order list */
+.seq { border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 14px; background: #fff; }
+.seq h3 { font-size: 16px; margin: 0 0 4px; }
+.seq > p { color: var(--muted); font-size: 14px; line-height: 1.45; margin: 0 0 6px; }
+.seq ol { list-style: none; margin: 12px 0 0; padding: 0; }
+.seq li { display: grid; grid-template-columns: 28px 44px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 9px 0; border-top: 1px solid var(--line); }
+.seq .n { width: 28px; height: 28px; background: #000; color: #fff; display: grid; place-items: center; font: 600 13px var(--display); }
+.seq .thumb { width: 44px; height: 44px; object-fit: cover; border: 1px solid var(--line); background: #fff; display: block; }
+.seq .lab b { display: block; font-weight: 600; font-size: 14px; }
+.seq .lab span { font-size: 12px; color: var(--muted); }
+.seq .mv { display: flex; gap: 4px; }
+.seq button { width: 32px; height: 32px; border: 1px solid #cfcfcf; background: #fff; border-radius: 4px; cursor: pointer; display: grid; place-items: center; padding: 0; }
+.seq button svg { width: 13px; height: 13px; stroke: #000; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.seq button:disabled { opacity: 0.3; cursor: default; }
+.seq .reset { width: auto; padding: 0 12px; margin-top: 12px; font: 500 13px var(--display); }
+.pdp-foot { color: var(--muted); font-size: 13px; line-height: 1.5; max-width: 760px; margin: 18px 0 40px; }
+
+@media (max-width: 1100px) { .pdp-stage { grid-template-columns: repeat(2, max-content); justify-content: center; } .seq { grid-column: 1 / -1; width: 100%; max-width: calc(826px * var(--s) + 28px); } }
+@media (max-width: 760px) { .pdp-stage { grid-template-columns: max-content; } .seq { max-width: calc(413px * var(--s)); } .pdp-prod-h h2 { font-size: 19px; } }
+@media (prefers-reduced-motion: reduce) { .car-track { scroll-behavior: auto; } .phone .ht { transition: none; } }

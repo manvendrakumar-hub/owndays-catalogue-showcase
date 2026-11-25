@@ -1,0 +1,549 @@
+{
+ "products": [
+  {
+   "pid": "233791",
+   "title": "AIR Black Full Rim Rectangle Eyeglasses",
+   "model": "AU2104A-4A",
+   "today": [
+    {
+     "src": "images/pdp/233791/g01.jpg",
+     "alt": "Angled view, photo 1 of 10"
+    },
+    {
+     "src": "images/pdp/233791/g02.jpg",
+     "alt": "Front, photo 2 of 10"
+    },
+    {
+     "src": "images/pdp/233791/g03.jpg",
+     "alt": "Side, photo 3 of 10"
+    },
+    {
+     "src": "images/pdp/233791/g04.jpg",
+     "alt": "Close-up, photo 4 of 10"
+    },
+    {
+     "src": "images/pdp/233791/g05.jpg",
+     "alt": "Angled view, photo 5 of 10"
+    },
+    {
+     "src": "images/pdp/233791/g06.jpg",
+     "alt": "Angled view, photo 6 of 10"
+    },
+    {
+     "src": "images/pdp/233791/g07.jpg",
+     "alt": "Model photo, photo 7 of 10"
+    },
+    {
+     "src": "images/pdp/233791/g08.jpg",
+     "alt": "Model photo, photo 8 of 10"
+    },
+    {
+     "src": "images/pdp/233791/g09.jpg",
+     "alt": "Model photo, photo 9 of 10"
+    },
+    {
+     "src": "images/pdp/233791/g10.jpg",
+     "alt": "Model photo, photo 10 of 10"
+    }
+   ],
+   "blocks": [
+    {
+     "id": "3d",
+     "label": "3D video",
+     "short": "3D",
+     "type": "video",
+     "video": "videos/motion3d/233791.mp4",
+     "poster": "videos/motion3d/233791.jpg",
+     "note": "3D motion file for this product"
+    },
+    {
+     "id": "front",
+     "label": "Front photo",
+     "short": "Front",
+     "type": "image",
+     "src": "images/pdp/233791/g02.jpg",
+     "alt": "Front view of the frame"
+    },
+    {
+     "id": "side",
+     "label": "Side photo",
+     "short": "Side",
+     "type": "image",
+     "src": "images/pdp/233791/g03.jpg",
+     "alt": "Side view of the frame"
+    },
+    {
+     "id": "explainer",
+     "label": "Product explainer video",
+     "short": "Explainer",
+     "type": "video",
+     "video": "videos/explainer/en.mp4",
+     "poster": "videos/explainer/en.jpg",
+     "note": "Product explainer video for this product"
+    },
+    {
+     "id": "tryon",
+     "label": "Product try-on video",
+     "short": "Try-on",
+     "type": "video",
+     "video": "videos/tryon/catalogue-video.mp4",
+     "poster": "videos/tryon/catalogue-video.jpg",
+     "note": "Sample try-on video, made for another product"
+    },
+    {
+     "id": "size",
+     "label": "Size image",
+     "short": "Size",
+     "type": "image",
+     "src": "images/static/233791.jpg",
+     "alt": "Static size image with the frame measurements"
+    },
+    {
+     "id": "rest",
+     "label": "Rest of the gallery",
+     "short": "Photos",
+     "type": "images",
+     "items": [
+      {
+       "src": "images/pdp/233791/g01.jpg",
+       "alt": "Angled view"
+      },
+      {
+       "src": "images/pdp/233791/g04.jpg",
+       "alt": "Close-up"
+      },
+      {
+       "src": "images/pdp/233791/g05.jpg",
+       "alt": "Angled view"
+      },
+      {
+       "src": "images/pdp/233791/g06.jpg",
+       "alt": "Angled view"
+      },
+      {
+       "src": "images/pdp/233791/g07.jpg",
+       "alt": "Model photo"
+      },
+      {
+       "src": "images/pdp/233791/g08.jpg",
+       "alt": "Model photo"
+      },
+      {
+       "src": "images/pdp/233791/g09.jpg",
+       "alt": "Model photo"
+      },
+      {
+       "src": "images/pdp/233791/g10.jpg",
+       "alt": "Model photo"
+      }
+     ]
+    }
+   ],
+   "page": {
+    "source": "owndays.com/sg, product 233791, read on 14 Oct 2026",
+    "subtitle": "Black Full Rim Rectangle",
+    "price": "S$ 218",
+    "priceNote": "Lenses included",
+    "deliveryChip": "Delivery by 20, October",
+    "chips": [
+     "Offers",
+     "Similar"
+    ],
+    "offer": {
+     "heading": "Best Deal for You",
+     "title": "Get second pair at $68",
+     "text": "with Premium Anti Glare lenses"
+    },
+    "colours": [
+     {
+      "name": "Black",
+      "hex": "#000000",
+      "selected": true
+     },
+     {
+      "name": "Matte Navy",
+      "hex": "#2a2833"
+     },
+     {
+      "name": "Matte Clear Gray",
+      "hex": "#f7f5f4"
+     }
+    ],
+    "delivery": {
+     "place": "Singapore",
+     "area": "Islandwide",
+     "by": "Delivery by 20, October",
+     "tagline": "Your vision, our priority",
+     "date": "Get it by Oct 20, Tuesday",
+     "note": "Not applicable for progressive & high power"
+    },
+    "details": [
+     [
+      "About the Product",
+      "AIR AU2104A-4A C1 Eyeglasses"
+     ],
+     [
+      "Product ID",
+      "233791"
+     ],
+     [
+      "Model No.",
+      "AU2104A-4A"
+     ],
+     [
+      "Frame Size",
+      "Medium"
+     ],
+     [
+      "Frame Dimensions",
+      "53-16-145.0-33.0"
+     ]
+    ],
+    "moreDetails": "+12 more Details",
+    "stores": {
+     "title": "Nearby Stores",
+     "button": "Find Stores",
+     "search": "Find stores nearby",
+     "location": "Use your current location",
+     "benefitsLabel": "STORE BENEFITS",
+     "benefits": [
+      [
+       "lens",
+       "Free Lens Cleaning"
+      ],
+      [
+       "eye",
+       "Free Eye Test"
+      ],
+      [
+       "repair",
+       "Free Repair"
+      ],
+      [
+       "care",
+       "Free After Care"
+      ]
+     ]
+    },
+    "promises": [
+     [
+      "ship",
+      "Free Shipping"
+     ],
+     [
+      "off",
+      "50% Discount for Replacement Pair"
+     ],
+     [
+      "warranty",
+      "1 Year Warranty"
+     ],
+     [
+      "care",
+      "Lifetime Free Maintenance"
+     ]
+    ],
+    "similar": {
+     "title": "Similar Products",
+     "viewAll": "View All",
+     "items": [
+      {
+       "src": "images/pdp/similar/214091.jpg",
+       "name": "OWNDAYS | AIR Black Full Rim Boston Eyeglasses",
+       "price": "S$ 178"
+      },
+      {
+       "src": "images/pdp/similar/214661.jpg",
+       "name": "OWNDAYS | ESSENTIAL Brown Full Rim Rectangle Eyeglasses",
+       "price": "S$ 59"
+      },
+      {
+       "src": "images/pdp/similar/214733.jpg",
+       "name": "OWNDAYS | ESSENTIAL Brown Full Rim Wellington Eyeglasses",
+       "price": "S$ 158"
+      },
+      {
+       "src": "images/pdp/similar/214516.jpg",
+       "name": "OWNDAYS | ESSENTIAL Grey Full Rim Wellington Eyeglasses",
+       "price": "S$ 158"
+      }
+     ]
+    },
+    "bar": {
+     "price": "S$218",
+     "unit": "(Frame+Lens)",
+     "sub": "Get second pair at $68",
+     "cta": "Select Lenses"
+    }
+   },
+   "short": "AIR Black Rectangle"
+  },
+  {
+   "pid": "254954",
+   "title": "OWNDAYS & POMPOMPURIN SR2010M-6A C2 Eyeglasses",
+   "model": "SR2010M-6A",
+   "today": [
+    {
+     "src": "images/pdp/254954/g01.jpg",
+     "alt": "Angled view, photo 1 of 9"
+    },
+    {
+     "src": "images/pdp/254954/g02.jpg",
+     "alt": "Front, photo 2 of 9"
+    },
+    {
+     "src": "images/pdp/254954/g03.jpg",
+     "alt": "Side, photo 3 of 9"
+    },
+    {
+     "src": "images/pdp/254954/g04.jpg",
+     "alt": "Side angle, photo 4 of 9"
+    },
+    {
+     "src": "images/pdp/254954/g05.jpg",
+     "alt": "Temple tip close-up, photo 5 of 9"
+    },
+    {
+     "src": "images/pdp/254954/g06.jpg",
+     "alt": "Temple tip close-up, photo 6 of 9"
+    },
+    {
+     "src": "images/pdp/254954/g07.jpg",
+     "alt": "Hinge and logo close-up, photo 7 of 9"
+    },
+    {
+     "src": "images/pdp/254954/g08.jpg",
+     "alt": "Temple charm icons close-up, photo 8 of 9"
+    },
+    {
+     "src": "images/pdp/254954/g09.jpg",
+     "alt": "Front view, photo 9 of 9"
+    }
+   ],
+   "blocks": [
+    {
+     "id": "3d",
+     "label": "3D video",
+     "short": "3D",
+     "type": "video",
+     "video": "videos/motion3d/254954.mp4",
+     "poster": "videos/motion3d/254954.jpg",
+     "note": "3D motion file for this product"
+    },
+    {
+     "id": "front",
+     "label": "Front photo",
+     "short": "Front",
+     "type": "image",
+     "src": "images/pdp/254954/g02.jpg",
+     "alt": "Front view of the frame"
+    },
+    {
+     "id": "side",
+     "label": "Side photo",
+     "short": "Side",
+     "type": "image",
+     "src": "images/pdp/254954/g03.jpg",
+     "alt": "Side view of the frame"
+    },
+    {
+     "id": "explainer",
+     "label": "Product explainer video",
+     "short": "Explainer",
+     "type": "video",
+     "video": "videos/explainer/en-254954.mp4",
+     "poster": "videos/explainer/en-254954.jpg",
+     "note": "Product explainer video for this product"
+    },
+    {
+     "id": "tryon",
+     "label": "Product try-on video",
+     "short": "Try-on",
+     "type": "video",
+     "video": "videos/tryon/catalogue-video.mp4",
+     "poster": "videos/tryon/catalogue-video.jpg",
+     "note": "Sample try-on video, made for another product"
+    },
+    {
+     "id": "size",
+     "label": "Size image",
+     "short": "Size",
+     "type": "image",
+     "src": "images/static/254954.jpg",
+     "alt": "Static size image with the frame measurements"
+    },
+    {
+     "id": "rest",
+     "label": "Rest of the gallery",
+     "short": "Photos",
+     "type": "images",
+     "items": [
+      {
+       "src": "images/pdp/254954/g01.jpg",
+       "alt": "Angled view"
+      },
+      {
+       "src": "images/pdp/254954/g04.jpg",
+       "alt": "Side angle"
+      },
+      {
+       "src": "images/pdp/254954/g05.jpg",
+       "alt": "Temple tip close-up"
+      },
+      {
+       "src": "images/pdp/254954/g06.jpg",
+       "alt": "Temple tip close-up"
+      },
+      {
+       "src": "images/pdp/254954/g07.jpg",
+       "alt": "Hinge and logo close-up"
+      },
+      {
+       "src": "images/pdp/254954/g08.jpg",
+       "alt": "Temple charm icons close-up"
+      },
+      {
+       "src": "images/pdp/254954/g09.jpg",
+       "alt": "Front view"
+      }
+     ]
+    }
+   ],
+   "page": {
+    "source": "owndays.com/sg, product 254954, read on 14 Oct 2026",
+    "subtitle": "Brown Halftone Full Rim Boston",
+    "price": "S$ 198",
+    "priceNote": "Lenses included",
+    "deliveryChip": "Delivery by 20, October",
+    "chips": [
+     "Offers",
+     "Similar"
+    ],
+    "offer": {
+     "heading": "Best Deal for You",
+     "title": "Free Case | Pompompurin Frames",
+     "text": "Applies on cart"
+    },
+    "colours": [
+     {
+      "name": "Brown",
+      "hex": "#865928"
+     },
+     {
+      "name": "Brown Halftone",
+      "hex": "#865928",
+      "fill": "linear-gradient(#7a4f24 50%, #c8b27c)",
+      "selected": true
+     }
+    ],
+    "delivery": {
+     "place": "Singapore",
+     "area": "Islandwide",
+     "by": "Delivery by 20, October",
+     "tagline": "Your vision, our priority",
+     "date": "Get it by Oct 20, Tuesday",
+     "note": "Not applicable for progressive & high power"
+    },
+    "details": [
+     [
+      "About the Product",
+      "OWNDAYS & POMPOMPURIN"
+     ],
+     [
+      "Product ID",
+      "254954"
+     ],
+     [
+      "Model No.",
+      "SR2010M-6A"
+     ],
+     [
+      "Frame Dimensions",
+      "51-19-140.0-45.5"
+     ],
+     [
+      "Frame colour",
+      "Brown Halftone"
+     ]
+    ],
+    "moreDetails": "+10 more Details",
+    "stores": {
+     "title": "Nearby Stores",
+     "button": "Find Stores",
+     "search": "Find stores nearby",
+     "location": "Use your current location",
+     "benefitsLabel": "STORE BENEFITS",
+     "benefits": [
+      [
+       "lens",
+       "Free Lens Cleaning"
+      ],
+      [
+       "eye",
+       "Free Eye Test"
+      ],
+      [
+       "repair",
+       "Free Repair"
+      ],
+      [
+       "care",
+       "Free After Care"
+      ]
+     ]
+    },
+    "promises": [
+     [
+      "ship",
+      "Free Shipping"
+     ],
+     [
+      "off",
+      "50% Discount for Replacement Pair"
+     ],
+     [
+      "warranty",
+      "1 Year Warranty"
+     ],
+     [
+      "care",
+      "Lifetime Free Maintenance"
+     ]
+    ],
+    "similar": {
+     "title": "Similar Products",
+     "viewAll": "View All",
+     "items": [
+      {
+       "src": "images/pdp/similar/214091.jpg",
+       "name": "OWNDAYS | AIR Black Full Rim Boston Eyeglasses",
+       "price": "S$ 178"
+      },
+      {
+       "src": "images/pdp/similar/214661.jpg",
+       "name": "OWNDAYS | ESSENTIAL Brown Full Rim Rectangle Eyeglasses",
+       "price": "S$ 59"
+      },
+      {
+       "src": "images/pdp/similar/214733.jpg",
+       "name": "OWNDAYS | ESSENTIAL Brown Full Rim Wellington Eyeglasses",
+       "price": "S$ 158"
+      },
+      {
+       "src": "images/pdp/similar/214516.jpg",
+       "name": "OWNDAYS | ESSENTIAL Grey Full Rim Wellington Eyeglasses",
+       "price": "S$ 158"
+      }
+     ]
+    },
+    "bar": {
+     "price": "S$198",
+     "unit": "(Frame+Lens)",
+     "sub": "Free Case | Pompompurin Frames",
+     "cta": "Select Lenses"
+    }
+   },
+   "short": "Pompompurin Brown Boston"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "pid": "233791",
+  "model": "AU2104A-4A",
+  "product": "OWNDAYS AIR AU2104A-4A, glossy black eyeglasses",
+  "items": [
+    {
+      "id": "explainer-en",
+      "label": "Product explainer video (English)",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "Voice-over and on-screen text, from the page facts",
+      "video": "videos/explainer/en.mp4",
+      "poster": "videos/explainer/en.jpg",
+      "dur": "37.9 s",
+      "bytes": 930961,
+      "audio": true,
+      "download": {
+        "file": "downloads/poc/233791_AU2104A-4A_explainer_en_1x1.mp4",
+        "bytes": 4017094
+      }
+    },
+    {
+      "id": "motion3d",
+      "label": "3D motion file",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "The frame turns, opens and comes apart, from its 3D model",
+      "video": "videos/motion3d/233791.mp4",
+      "poster": "videos/motion3d/233791.jpg",
+      "dur": "15.0 s",
+      "bytes": 604151,
+      "audio": false,
+      "download": {
+        "file": "downloads/poc/233791_AU2104A-4A_3d-motion_1x1.mp4",
+        "bytes": 4091300
+      }
+    },
+    {
+      "id": "tryon-233791-1x1",
+      "label": "Product try-on video",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "A woman and a man wear the product on a plain studio wall",
+      "video": "videos/poc/tryon-233791-1x1.mp4",
+      "poster": "videos/poc/tryon-233791-1x1.jpg",
+      "dur": "11.8 s",
+      "bytes": 1122424,
+      "audio": false,
+      "download": {
+        "file": "downloads/poc/233791_AU2104A-4A_tryon_1x1.mp4",
+        "bytes": 4790331
+      }
+    }
+  ]
+}

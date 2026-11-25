@@ -1,0 +1,42 @@
+{
+  "id": "motion3d",
+  "title": "3D motion files catalog",
+  "items": [
+    {
+      "id": "233791",
+      "label": "233791 · AU2104A-4A",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "Glossy black eyeglasses",
+      "video": "videos/motion3d/233791.mp4",
+      "poster": "videos/motion3d/233791.jpg",
+      "dur": "15.0 s",
+      "bytes": 604151,
+      "audio": false
+    },
+    {
+      "id": "233811",
+      "label": "233811 · AU2105A-4A",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "Matte black eyeglasses with grey temple tips",
+      "video": "videos/motion3d/233811.mp4",
+      "poster": "videos/motion3d/233811.jpg",
+      "dur": "15.0 s",
+      "bytes": 554966,
+      "audio": false
+    },
+    {
+      "id": "254954",
+      "label": "254954 · SR2010M-6A",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "Brown halftone eyeglasses, collaboration frame",
+      "video": "videos/motion3d/254954.mp4",
+      "poster": "videos/motion3d/254954.jpg",
+      "dur": "15.0 s",
+      "bytes": 557358,
+      "audio": false
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "static",
+  "title": "Static images catalog",
+  "items": [
+    {
+      "id": "233791",
+      "label": "233791 · AU2104A-4A",
+      "ratio": "1x1",
+      "type": "image",
+      "chips": [
+        "Size template",
+        "Brand accuracy 100%"
+      ],
+      "cap": "Glossy black acetate, full rim, square shape. Brand accuracy version: 100% of the automatic brand checks. Following the Figma file exactly: 87%.",
+      "image": "images/static/233791.jpg",
+      "bytes": 85524
+    },
+    {
+      "id": "223715",
+      "label": "223715 · SUN2099T-2S",
+      "ratio": "1x1",
+      "type": "image",
+      "chips": [
+        "Size template",
+        "Brand accuracy 100%"
+      ],
+      "cap": "Tortoise-brown sunglasses, full rim, Boston shape. Brand accuracy version: 100% of the automatic brand checks. Following the Figma file exactly: 87%.",
+      "image": "images/static/223715.jpg",
+      "bytes": 92539
+    },
+    {
+      "id": "254954",
+      "label": "254954 · SR2010M-6A",
+      "ratio": "1x1",
+      "type": "image",
+      "chips": [
+        "Size template",
+        "Brand accuracy 100%"
+      ],
+      "cap": "Translucent brown halftone, Boston shape, OWNDAYS & POMPOMPURIN. Brand accuracy version: 100% of the automatic brand checks. Following the Figma file exactly: 87%.",
+      "image": "images/static/254954.jpg",
+      "bytes": 90846
+    }
+  ]
+}

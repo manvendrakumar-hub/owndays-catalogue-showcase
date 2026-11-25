@@ -1,0 +1,18 @@
+{
+  "id": "poc",
+  "title": "POC 1PID",
+  "items": [
+    {
+      "id": "tryon-233791-1x1",
+      "label": "Product try-on video",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "A woman and a man wear the product on a plain studio wall",
+      "video": "videos/poc/tryon-233791-1x1.mp4",
+      "poster": "videos/poc/tryon-233791-1x1.jpg",
+      "dur": "11.8 s",
+      "bytes": 1122424,
+      "audio": false
+    }
+  ]
+}

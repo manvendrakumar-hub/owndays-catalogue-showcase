@@ -1,0 +1,43 @@
+/* Owndays look for the showcase: same structure, brand colours (white ground, black text) and brand type (Founders Grotesk, loaded from the Owndays site's own font host).
+   No blue, green or other hue: the brand has none outside its sale colours, which a showcase page does not use. */
+@font-face { font-family: "Founders Grotesk"; font-weight: 400; font-style: normal; font-display: swap; src: url("https://static1.lenskart.com/media/owndays/fonts/FoundersGrotesk/FoundersGrotesk-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Founders Grotesk"; font-weight: 500; font-style: normal; font-display: swap; src: url("https://static1.lenskart.com/media/owndays/fonts/FoundersGrotesk/FoundersGrotesk-Medium.woff2") format("woff2"); }
+@font-face { font-family: "Founders Grotesk"; font-weight: 600; font-style: normal; font-display: swap; src: url("https://static1.lenskart.com/media/owndays/fonts/FoundersGrotesk/FoundersGrotesk-Semibold.woff2") format("woff2"); }
+@font-face { font-family: "Founders Grotesk"; font-weight: 700; font-style: normal; font-display: swap; src: url("https://static1.lenskart.com/media/owndays/fonts/FoundersGrotesk/FoundersGrotesk-Bold.woff2") format("woff2"); }
+:root {
+  --bg: #ffffff; --ink: #000000; --navy: #000000; --muted: #595959; --line: #e3e3e3; --soft: #f5f5f5;
+  --accent: #000000; --accent-ink: #000000; --warn-bg: #f5f5f5; --warn-line: #d6d6d6;
+  --display: "Founders Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: "Founders Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+::selection { background: #000; color: #fff; }
+* { scrollbar-color: #cfcfcf transparent; }
+body { letter-spacing: 0; }
+/* brand sub-head style: Medium, all caps, tracked */
+.eyebrow { font-weight: 500; letter-spacing: 0.14em; }
+.eyebrow i { border-radius: 0; box-shadow: none; width: 9px; height: 9px; }
+h1 { font-weight: 600; letter-spacing: -0.03em; }
+h2, h3 { font-weight: 600; }
+thead th, .acc .acc-n, .foot, .muted.mono { font-weight: 500; }
+/* tab bar carries the real OWNDAYS logotype (black, never recoloured) */
+.tabbar::before { content: ""; flex: none; align-self: center; width: 118px; height: 14px; margin-right: clamp(22px, 4vw, 44px); background: url("theme/owndays/owndays-logotype-black.png") no-repeat left center / contain; }
+.tab[aria-selected="true"] { border-bottom-width: 3px; }
+.tab:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible { outline-color: #000; }
+/* neutral greys instead of the cool blue-greys */
+.subtab:hover { border-color: #a8a8a8; }
+.chip.plan::before { background: #b3b3b3; }
+.chip.warn::before { background: #8c8c8c; }
+.pending { border-color: #cfcfcf; }
+.gn.cfg rect { stroke: #8c8c8c; }
+.gl.d { stroke: #8c8c8c; }
+.res.key .lab, .res.key .sub { color: #bdbdbd; }
+.cm-btn:hover { border-color: #cfcfcf; }
+.cm-thanks { background: #f5f5f5; color: #000; }
+/* collapsible rows: a black number square and a black arrow */
+.acc { border-radius: 4px; }
+.acc > summary { border-radius: 4px; }
+.acc[open] > summary { border-radius: 4px 4px 0 0; }
+.acc .acc-n { display: inline-grid; place-items: center; width: 28px; height: 28px; background: #000; color: #fff; letter-spacing: 0; font-size: 13px; }
+.acc > summary:hover { background: #f5f5f5; }
+.chip { border-radius: 2px; }
+.callout, .pending, .calc, .res, table, .cm-btn, .cm-post { border-radius: 4px; }

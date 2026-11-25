@@ -1,0 +1,78 @@
+{
+  "id": "explainer",
+  "title": "Product explainer video",
+  "items": [
+    {
+      "id": "en",
+      "label": "233791 · AU2104A-4A · English",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "Glossy black, full rim, square",
+      "video": "videos/explainer/en.mp4",
+      "poster": "videos/explainer/en.jpg",
+      "dur": "37.9 s",
+      "bytes": 930961,
+      "audio": true
+    },
+    {
+      "id": "en-223715",
+      "label": "223715 · SUN2099T-2S · English",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "Light brown, full rim, Boston sunglasses",
+      "video": "videos/explainer/en-223715.mp4",
+      "poster": "videos/explainer/en-223715.jpg",
+      "dur": "33.6 s",
+      "bytes": 1018705,
+      "audio": true
+    },
+    {
+      "id": "en-254954",
+      "label": "254954 · SR2010M-6A · English",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "Brown halftone, full rim, Boston, Owndays and Pompompurin",
+      "video": "videos/explainer/en-254954.mp4",
+      "poster": "videos/explainer/en-254954.jpg",
+      "dur": "41.4 s",
+      "bytes": 1075540,
+      "audio": true
+    },
+    {
+      "id": "zh",
+      "label": "233791 · AU2104A-4A · Mandarin",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "Glossy black, full rim, square",
+      "video": "videos/explainer/zh.mp4",
+      "poster": "videos/explainer/zh.jpg",
+      "dur": "31.6 s",
+      "bytes": 810596,
+      "audio": true
+    },
+    {
+      "id": "zh-223715",
+      "label": "223715 · SUN2099T-2S · Mandarin",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "Light brown, full rim, Boston sunglasses",
+      "video": "videos/explainer/zh-223715.mp4",
+      "poster": "videos/explainer/zh-223715.jpg",
+      "dur": "32.7 s",
+      "bytes": 1014272,
+      "audio": true
+    },
+    {
+      "id": "zh-254954",
+      "label": "254954 · SR2010M-6A · Mandarin",
+      "ratio": "1x1",
+      "type": "video",
+      "cap": "Brown halftone, full rim, Boston, Owndays and Pompompurin",
+      "video": "videos/explainer/zh-254954.mp4",
+      "poster": "videos/explainer/zh-254954.jpg",
+      "dur": "35.8 s",
+      "bytes": 957204,
+      "audio": true
+    }
+  ]
+}

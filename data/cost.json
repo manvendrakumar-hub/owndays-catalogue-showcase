@@ -1,0 +1,125 @@
+{
+  "inr_per_usd": 96,
+  "note_rate": "Working assumption: $1 = ₹96, the same as the other showcase pages.",
+  "tools": [
+    {
+      "id": "explainer",
+      "name": "Product explainer video",
+      "status": "measured",
+      "voice": {
+        "provider": "ElevenLabs",
+        "model": "eleven_multilingual_v2",
+        "credits_per_char": 1,
+        "usd_per_1k": 0.3,
+        "usd_per_1k_low": 0.1,
+        "retake": 0.15,
+        "chars": {
+          "EN": 432,
+          "ZH": 144
+        }
+      },
+      "time": {
+        "shared": [
+          {
+            "label": "Cutouts from the 5 photos",
+            "sec": 1.6,
+            "basis": "measured"
+          }
+        ],
+        "per_language": {
+          "EN": [
+            {
+              "label": "Voice-over (6 scene takes)",
+              "sec": 27,
+              "basis": "measured"
+            },
+            {
+              "label": "Script and timing build",
+              "sec": 5,
+              "basis": "estimated"
+            },
+            {
+              "label": "Checks",
+              "sec": 8,
+              "basis": "measured"
+            },
+            {
+              "label": "Render",
+              "sec": 50.6,
+              "basis": "measured"
+            }
+          ],
+          "ZH": [
+            {
+              "label": "Voice-over (6 scene takes)",
+              "sec": 27,
+              "basis": "estimated"
+            },
+            {
+              "label": "Script and timing build",
+              "sec": 5,
+              "basis": "estimated"
+            },
+            {
+              "label": "Checks",
+              "sec": 8,
+              "basis": "estimated"
+            },
+            {
+              "label": "Render",
+              "sec": 44.6,
+              "basis": "measured"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "motion3d",
+      "name": "3D motion files catalog",
+      "status": "measured",
+      "time_sec_per_pid": 1500,
+      "cost_usd_per_pid": 0,
+      "note": "Time is one finished video on our own Mac: about 25 minutes for a frame with a real 3D model (end to end, measured on one PID), and about 41 minutes for the hand-built frames (measured on three). No paid service is used in the run, so the cash cost per PID is zero. Building a hand-built model is not included and has not been priced."
+    },
+    {
+      "id": "static",
+      "name": "Static images catalog",
+      "status": "measured",
+      "time_sec_per_pid": 23.4,
+      "cost_usd_per_pid": 0,
+      "note": "Time is one PID from the Owndays site to a checked pair of size templates: about 15 s to fetch details and photos (short pauses are built in) plus about 8.4 s to measure, fit both versions and run the brand checks, measured on the saved PIDs. No paid service is used in the run, so the cash cost per PID is zero. Building the tool is not priced."
+    },
+    {
+      "id": "tryon",
+      "name": "Product try-on video",
+      "status": "pending",
+      "time_sec_per_pid": null,
+      "cost_usd_per_pid": 9.6,
+      "note": "Cost is the Seedance 2.5 price for one finished video (a woman's clip and a man's clip, $4.80 each). Working assumptions from the catalogue video showcase. Generation time has not been recorded.",
+      "detail_title": "Product try-on video: where the cost comes from",
+      "detail": [
+        [
+          "Model",
+          "Seedance 2.5, the model kept for this video"
+        ],
+        [
+          "One 8 s clip",
+          "$4.80 (₹460.80). The clips made so far are 6 s, so 8 s is the plan."
+        ],
+        [
+          "Finished video, woman and man",
+          "$9.60 (₹921.60), two clips. This is the per-PID figure above."
+        ],
+        [
+          "Credit price",
+          "$0.05 per credit, a working assumption"
+        ],
+        [
+          "At 10,000 finished videos",
+          "About $96,000 (₹92.16 lakh), before retries"
+        ]
+      ]
+    }
+  ]
+}

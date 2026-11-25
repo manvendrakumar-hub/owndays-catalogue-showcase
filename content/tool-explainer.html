@@ -1,0 +1,83 @@
+<!-- SECTION OWNER: the product explainer video session. Edit this file only for this tool's part of the Tools tab (description).
+     Pattern for every tool: one short paragraph, a flow graph (inline SVG, a wide and a tall version), a table of the Python scripts
+     (script, one-line definition, needs), what was done to make it, what it is built with. Public page: no commands, prompts, folders or secrets. -->
+<section class="sec" aria-labelledby="h-tool-explainer">
+  <div class="chapter-h"><span class="fnum">1</span><h2 id="h-tool-explainer">Product explainer video</h2></div>
+  <p class="chips"><span class="chip">Built and used for 3 PIDs</span> <span class="chip plan plain">Many PIDs: planned, not built</span></p>
+  <div class="prose">
+    <p>A small pipeline of Python scripts turns one PID into two finished videos, English and Mandarin. It reads the product page, cuts the product photos out of their white background, measures where the lenses, the outline and the temple are, writes the lines from fixed templates, records them with ElevenLabs, and renders a square video where every on-screen line lands on the spoken word. Every product pixel is the real photo; nothing is generated.</p>
+  </div>
+  <div class="graph">
+      <svg class="g-h" viewBox="0 0 1100 250" role="img" aria-label="Seven steps from page facts to a rendered video: page facts, cutouts, script, voice, compose, check, render" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="ga-h" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ga"/></marker></defs>
+      <g class="gn"><rect x="20" y="30" width="134" height="84" rx="10"/><text class="t" x="32" y="56">Page facts</text><text x="32" y="80">in  <tspan class="v">PID</tspan></text><text x="32" y="98">out <tspan class="v">spec data</tspan></text></g>
+      <line class="gl" x1="154" y1="72.0" x2="172" y2="72.0" marker-end="url(#ga-h)"/>
+      <g class="gn"><rect x="174" y="30" width="134" height="84" rx="10"/><text class="t" x="186" y="56">Cutouts</text><text x="186" y="80">in  <tspan class="v">photos</tspan></text><text x="186" y="98">out <tspan class="v">PNG, positions</tspan></text></g>
+      <line class="gl" x1="308" y1="72.0" x2="326" y2="72.0" marker-end="url(#ga-h)"/>
+      <g class="gn"><rect x="328" y="30" width="134" height="84" rx="10"/><text class="t" x="340" y="56">Script</text><text x="340" y="80">in  <tspan class="v">spec data</tspan></text><text x="340" y="98">out <tspan class="v">text lines</tspan></text></g>
+      <line class="gl" x1="462" y1="72.0" x2="480" y2="72.0" marker-end="url(#ga-h)"/>
+      <g class="gn"><rect x="482" y="30" width="134" height="84" rx="10"/><text class="t" x="494" y="56">Voice</text><text x="494" y="80">in  <tspan class="v">text lines</tspan></text><text x="494" y="98">out <tspan class="v">audio, times</tspan></text></g>
+      <line class="gl" x1="616" y1="72.0" x2="634" y2="72.0" marker-end="url(#ga-h)"/>
+      <g class="gn"><rect x="636" y="30" width="134" height="84" rx="10"/><text class="t" x="648" y="56">Compose</text><text x="648" y="80">in  <tspan class="v">PNG, times</tspan></text><text x="648" y="98">out <tspan class="v">6 scenes</tspan></text></g>
+      <line class="gl" x1="770" y1="72.0" x2="788" y2="72.0" marker-end="url(#ga-h)"/>
+      <g class="gn"><rect x="790" y="30" width="134" height="84" rx="10"/><text class="t" x="802" y="56">Check</text><text x="802" y="80">in  <tspan class="v">scenes</tspan></text><text x="802" y="98">out <tspan class="v">lint, layout</tspan></text></g>
+      <line class="gl" x1="924" y1="72.0" x2="942" y2="72.0" marker-end="url(#ga-h)"/>
+      <g class="gn"><rect x="944" y="30" width="134" height="84" rx="10"/><text class="t" x="956" y="56">Render</text><text x="956" y="80">in  <tspan class="v">scenes, audio</tspan></text><text x="956" y="98">out <tspan class="v">MP4 videos</tspan></text></g>
+      <g class="gn cfg"><rect x="328" y="148" width="442" height="84" rx="10"/><text class="h" x="340" y="170">Fixed by design</text><text x="340" y="192">Owndays fonts and colours, white ground</text><text x="340" y="210">No prices, no generated imagery</text></g>
+      <line class="gl d" x1="549.0" y1="114" x2="549.0" y2="147"/>
+      </svg>
+      <svg class="g-v" viewBox="0 0 340 872" role="img" aria-label="Seven steps from page facts to a rendered video" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="ga-v" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="ga"/></marker></defs>
+      <g class="gn"><rect x="20" y="12" width="300" height="84" rx="10"/><text class="t" x="32" y="38">Page facts</text><text x="32" y="62">in  <tspan class="v">PID</tspan></text><text x="32" y="80">out <tspan class="v">spec data</tspan></text></g>
+      <line class="gl" x1="170" y1="96" x2="170" y2="116" marker-end="url(#ga-v)"/>
+      <g class="gn"><rect x="20" y="118" width="300" height="84" rx="10"/><text class="t" x="32" y="144">Cutouts</text><text x="32" y="168">in  <tspan class="v">photos</tspan></text><text x="32" y="186">out <tspan class="v">PNG, positions</tspan></text></g>
+      <line class="gl" x1="170" y1="202" x2="170" y2="222" marker-end="url(#ga-v)"/>
+      <g class="gn"><rect x="20" y="224" width="300" height="84" rx="10"/><text class="t" x="32" y="250">Script</text><text x="32" y="274">in  <tspan class="v">spec data</tspan></text><text x="32" y="292">out <tspan class="v">text lines</tspan></text></g>
+      <line class="gl" x1="170" y1="308" x2="170" y2="328" marker-end="url(#ga-v)"/>
+      <g class="gn"><rect x="20" y="330" width="300" height="84" rx="10"/><text class="t" x="32" y="356">Voice</text><text x="32" y="380">in  <tspan class="v">text lines</tspan></text><text x="32" y="398">out <tspan class="v">audio, times</tspan></text></g>
+      <line class="gl" x1="170" y1="414" x2="170" y2="434" marker-end="url(#ga-v)"/>
+      <g class="gn"><rect x="20" y="436" width="300" height="84" rx="10"/><text class="t" x="32" y="462">Compose</text><text x="32" y="486">in  <tspan class="v">PNG, times</tspan></text><text x="32" y="504">out <tspan class="v">6 scenes</tspan></text></g>
+      <line class="gl" x1="170" y1="520" x2="170" y2="540" marker-end="url(#ga-v)"/>
+      <g class="gn"><rect x="20" y="542" width="300" height="84" rx="10"/><text class="t" x="32" y="568">Check</text><text x="32" y="592">in  <tspan class="v">scenes</tspan></text><text x="32" y="610">out <tspan class="v">lint, layout</tspan></text></g>
+      <line class="gl" x1="170" y1="626" x2="170" y2="646" marker-end="url(#ga-v)"/>
+      <g class="gn"><rect x="20" y="648" width="300" height="84" rx="10"/><text class="t" x="32" y="674">Render</text><text x="32" y="698">in  <tspan class="v">scenes, audio</tspan></text><text x="32" y="716">out <tspan class="v">MP4 videos</tspan></text></g>
+      <g class="gn cfg"><rect x="20" y="756" width="300" height="84" rx="10"/><text class="h" x="32" y="778">Fixed by design</text><text x="32" y="800">Owndays fonts and colours, white ground</text><text x="32" y="818">No prices, no generated imagery</text></g>
+      </svg>
+  </div>
+
+  <h3 style="margin-top:36px">Python scripts</h3>
+  <div class="tablewrap">
+    <table class="stack">
+      <thead><tr><th scope="col">Script</th><th scope="col">What it does</th><th scope="col">Needs</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><span class="mono">make_cutouts.py</span></th><td data-label="What it does">Turns a white-background photo into a transparent cutout and removes the floor reflection. It has two modes: one for dark frames, and one for coloured or see-through frames and tinted lenses.</td><td data-label="Needs">OpenCV</td></tr>
+        <tr><th scope="row"><span class="mono">measure.py</span></th><td data-label="What it does">Finds the two lenses, the frame outline and the temple line on the cutouts, and checks that the lens width and the lens height give the same scale.</td><td data-label="Needs">OpenCV</td></tr>
+        <tr><th scope="row"><span class="mono">make_project.py</span></th><td data-label="What it does">Fills the six scene templates with a PID's measured positions and its lines, and builds the English project.</td><td data-label="Needs">Nothing extra</td></tr>
+        <tr><th scope="row"><span class="mono">build_vo.py</span></th><td data-label="What it does">Records each scene with ElevenLabs, reads the word timings and levels the audio.</td><td data-label="Needs">An ElevenLabs key</td></tr>
+        <tr><th scope="row"><span class="mono">apply_timing.py</span></th><td data-label="What it does">Writes the spoken-word times into the scenes and rebuilds the timeline.</td><td data-label="Needs">Nothing extra</td></tr>
+        <tr><th scope="row"><span class="mono">localize.py</span></th><td data-label="What it does">Builds the Mandarin version from the English one, with its own timing and Chinese font.</td><td data-label="Needs">Google Fonts, for the Chinese font subset</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:44px">What was done to make it</h3>
+  <ol class="steps">
+    <li><span class="when">Cutouts</span><strong>Background out, product untouched</strong><span class="d">The white ground is removed from the alpha, reflections are dropped and clear lenses stay clear. A second mode keeps coloured and see-through frames whole, keeps thin metal bridges, and removes the floor reflection column by column. Checked on dark and coloured backgrounds.</span></li>
+    <li><span class="when">Scenes</span><strong>Six scenes and a footer</strong><span class="d">Outline, measurement lines and glint are drawn in photo coordinates, so they move and scale with the photo. Dimension lines are to scale. For a new PID the positions are measured from its cutouts. On the two new PIDs the lens width and height give the same scale to within 0.5%.</span></li>
+    <li><span class="when">Templates</span><strong>One scene set for every PID</strong><span class="d">The six scenes are templates. A new PID fills in its own positions and words, and the template is checked by rebuilding the first approved video from it.</span></li>
+    <li><span class="when">Voice</span><strong>One take per scene</strong><span class="d">The voice's word timings decide when each line appears. Audio is levelled to about -15 LUFS with a peak ceiling.</span></li>
+    <li><span class="when">Script</span><strong>Plain statements</strong><span class="d">Lines come from page facts only. Brand words are written so the voice says them as words.</span></li>
+    <li><span class="when">Checks</span><strong>Every build is checked</strong><span class="d">Lint, layout and text contrast, contact sheets read at every spoken beat, and the sound checked for length and loudness.</span></li>
+    <li><span class="when">Render</span><strong>About 3 minutes a PID</strong><span class="d">Both languages on one Mac. Cost and time per PID are on the Cost and time tab.</span></li>
+  </ol>
+
+  <h3 style="margin-top:44px">Built with</h3>
+  <ul class="facts" aria-label="Built with">
+    <li><span class="k">Renderer</span><span class="v">HyperFrames (HTML scenes to video) with ffmpeg.</span></li>
+    <li><span class="k">Voice</span><span class="v">ElevenLabs, multilingual model: Christine for English, Lexi for Mandarin.</span></li>
+    <li><span class="k">Fonts</span><span class="v">Founders Grotesk; Noto Sans SC for Chinese.</span></li>
+    <li><span class="k">Output</span><span class="v">1080 × 1080, 30 fps, H.264 video with AAC sound.</span></li>
+    <li><span class="k">Proven on</span><span class="v">Three frames: 233791 (glossy black eyeglasses), 223715 (tortoise sunglasses with tinted lenses and a thin gold-coloured bridge) and 254954 (see-through brown eyeglasses from a character collaboration). Rimless and half-rim frames, which have no closed lens outline, are not tried yet. A new frame still needs its own wording and a look at the first render.</span></li>
+    <li><span class="k">Not built</span><span class="v">Running many PIDs automatically. This is planned, not done.</span></li>
+  </ul>
+</section>
